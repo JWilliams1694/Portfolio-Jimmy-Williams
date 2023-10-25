@@ -1,0 +1,173 @@
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    border-bottom: 7px ridge #7960b6;
+    font-family: 'Bangers', cursive;
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 16px;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'IM Fell DW Pica', serif;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    -webkit-text-stroke: 1px black;
+}
+
+body {
+    background-color: #2d9cca;
+    font-family: 'Arial', 'sans-serif';
+}
+
+main {
+    background-color: #222544;
+    margin: 0px auto;
+    padding: 10px 40px 60px 30px;
+}
+
+header {
+    background-color: #222544;
+    margin: 0 auto;
+    padding: 20px 40px 5px 30px;
+}
+
+footer {
+    margin: 0 auto;
+    padding: 20px 40px 30px 30px;
+    background-color: #2d9cca;
+}
+hr{
+    border-bottom: 7px ridge #7960b6;
+}
+p {
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: center;
+    color: white;
+}
+
+ul {
+
+    list-style-position: inside;
+}
+
+ul.center {
+    text-align: center;
+}
+
+li {
+    text-align: left;
+    margin-left: 35%;
+    font-weight: 900;
+    padding: 5px;
+}
+
+blockquote {
+    background-color: #474866;
+    padding: 30px;
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+}
+
+::selection {
+    background: #33bbdd;
+}
+
+img {
+    border: 5px solid rgb(241, 172, 23);
+    color: #001aff;
+}
+
+img.center {
+    margin: auto;
+    display: block;
+}
+
+a:link {
+    color: #107895;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* visited link */
+a:visited {
+    color: #107895;
+}
+
+/* mouse over link */
+a:hover {
+    color: #c02e1d;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}
+
+.parent {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 3px;
+    color: #107895;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:1380px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    div img {
+        height: 20rem;
+    }
+}
+
+@media screen and (min-width:1381px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+    }
+
+    div img {
+        height: 20rem;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div4 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .div5 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div6 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .div7 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+}
