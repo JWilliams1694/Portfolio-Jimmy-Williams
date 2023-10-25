@@ -175,7 +175,7 @@ function setup() {
     });
 
     pokeballSprite = PIXI.Sprite.from("images/pokeball.png");
-    pokemonSprite = PIXI.Sprite.from(`images/sprites/${Math.floor(Math.random() * 649) + 1}.png`)
+    pokemonSprite = PIXI.Sprite.from(`images/sprites/${Math.floor(Math.random() * 1017) + 1}.png`)
     pokemonSprite.width = 100;
     pokemonSprite.anchor.set(0.5);
     pokemonSprite.height = 100;
@@ -191,7 +191,7 @@ function setup() {
     }
 
     for (let i = 0; i < 100; i++) {
-        pokemonList[i] = PIXI.Sprite.from(`images/sprites/${Math.floor(Math.random() * 649) + 1}.png`);
+        pokemonList[i] = PIXI.Sprite.from(`images/sprites/${Math.floor(Math.random() * 1017) + 1}.png`);
     }
 
     // create labels 
