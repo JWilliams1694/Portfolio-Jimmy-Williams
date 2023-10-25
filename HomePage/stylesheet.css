@@ -40,9 +40,11 @@ footer {
     padding: 20px 40px 30px 30px;
     background-color: #2d9cca;
 }
-hr{
+
+hr {
     border-bottom: 7px ridge #7960b6;
 }
+
 p {
     font-size: 20px;
     margin-left: 50px;
@@ -90,15 +92,26 @@ img.center {
     display: block;
 }
 
-a:link {
-    color: #107895;
+a {
+    font-size: 40px;
+    font-family: 'IM Fell DW Pica', serif;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    -webkit-text-stroke: 1px black;
     font-weight: bold;
-    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+/* normal link */
+a:link {
+
 }
 
 /* visited link */
 a:visited {
-    color: #107895;
+
 }
 
 /* mouse over link */
@@ -108,7 +121,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: green;
+
 }
 
 .parent {
