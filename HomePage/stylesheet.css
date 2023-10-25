@@ -105,14 +105,14 @@ a {
 }
 
 /* normal link */
-a:link {
+/* a:link {
 
-}
+} */
 
 /* visited link */
-a:visited {
+/* a:visited {
 
-}
+} */
 
 /* mouse over link */
 a:hover {
@@ -120,9 +120,9 @@ a:hover {
 }
 
 /* selected link */
-a:active {
+/* a:active {
 
-}
+} */
 
 .parent {
     display: grid;
