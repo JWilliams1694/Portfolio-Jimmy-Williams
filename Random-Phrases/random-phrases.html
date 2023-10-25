@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Phrases</title>
+    <script>
+        window.onload = onStart;
+
+
+        let phrases = [
+            "Pirates are evil? The Marines are righteous? These terms have always changed throughout the course of history! Kids who have never seen peace and kids who have never seen war have different values! Those who stand at the top determine what's wrong and what's right! This very place is neutral ground! Justice will prevail, you say? But of course it will! Whoever wins this war becomes justice!",
+            "When You Aim High, You Sometimes Come Across Fights Not Worth Fighting.",
+            "When Do You Think People Die? When They Are Shot In The Heart With A Pistol? No. When They Are Ravaged By An Incurable Disease? No. When They Drink A Soup Made From Poisonous Mushrooms? No. It’s When... They Are Forgotten!",
+            "My treasure? If you want it, you can have it! Find it! I left everything this world has to offer there!",
+            "Hero? No! We're pirates! I love heroes but I don't wanna be one! Do you know what heroes are? Say there is a chunk of meat. Pirates will have a banquet and eat it but heroes will share it with other people. I want all the meat!",
+            "It is not a sin to fight for the right cause. There are those who words alone will not reach.",
+            "I Thought A Musclehead Like You Couldn't Understand Sentences.",
+            "I don’t know. I’m not sure why myself. But if I were to take even one step back, I believe that all those important oaths, promises and many other deals ’til now, will all go to waste and I’ll never be able to return before you, ever again.",
+            "I’m going to be the world’s greatest swordsman! All I have left is my destiny! My name may be infamous…but it’s gonna shake the world!"
+        ];
+
+
+
+        function onStart() {
+            let button = document.querySelector("#button");
+            displayQuote();
+            button.onclick = displayQuote;
+        }
+
+        function displayQuote() {
+            document.querySelector("#phrase").innerHTML = phrases[Math.floor(Math.random() * phrases.length)];
+        }
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <img src="images/luffy.jpg" alt="">
+        <h1>Random One Piece Quotes</h1>
+        <div id="phrase"></div>
+        <button type="button" id="button">Randomize</button>
+        <footer>Jimmy Williams</footer>
+
+    </main>
+
+</body>
+
+</html>

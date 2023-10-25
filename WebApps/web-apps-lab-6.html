@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Apps-3-HW</title>
+    <style>
+        body {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Favorites</h1>
+    <h2>My Favorite Colors</h2>
+
+    <ol id="colorsList">
+
+    </ol>
+
+    <h2>My Favorite Games</h2>
+
+    <ol id="gamesList">
+
+    </ol>
+
+    <h2>My Favorite Links</h2>
+
+    <ol id="linksList">
+
+    </ol>
+
+    <script>
+        "use strict";
+        let colors = ["red", "gold", "purple", "blue", "green"];
+        let games = ["Breath of the Wild", "Super Smash Bros. Ultimate", "Super Mario Galaxy 1/2", "Mario Kart 8", "Undertale/Deltarune", "Kingdom Hearts 2", "Final Fantasy 7 Remake", "Super Mario Odyssey", "Majoras mask / Wind Waker", "Persona 5"]; // add some games
+
+        // Optional - can you figure out how to pull both the key AND the value
+        // from the `links` object literal?
+        let links = {
+            "Nintendo": "https://www.nintendo.com",
+            "PlayStation": "https://www.playstation.com/en-us/",
+            "Zelda": "https://www.zelda.com"
+        }
+        for (let i = 0; i < colors.length; i++) {
+            let color = document.createElement("li");
+            color.innerHTML = colors[i];
+            let colorList = document.querySelector("#colorsList");
+            colorList.appendChild(color);
+        }
+        for (let game of games) {
+            let gameItem = document.createElement("li");
+            gameItem.innerHTML = game;
+            let gameList = document.querySelector("#gamesList");
+            gameList.appendChild(gameItem);
+        }
+        for(let key in links){
+        let listItem = document.createElement("li");
+        let link = document.createElement("a");
+        link.innerHTML = key;
+        link.href = links[key];
+        listItem.appendChild(link);
+        document.querySelector("#linksList").appendChild(listItem);
+        }
+    </script>
+</body>
+
+</html>

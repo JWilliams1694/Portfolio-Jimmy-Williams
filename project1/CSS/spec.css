@@ -1,0 +1,149 @@
+html {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 3%;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #beb3a0;
+    margin: 0px;
+    padding-top: 3rem;
+}
+
+#headerContainer {
+    display: grid;
+    grid-template-areas: "logo title";
+    grid-template-columns: auto 1fr;
+
+}
+
+div.container {
+    display: grid;
+    grid-template-areas: "left right";
+
+}
+
+
+#bottomRight {
+    position: relative;
+    overflow: hidden;
+}
+
+
+#rainbow {
+    float: right;
+    margin: -7rem 0 0 -.5rem;
+    width: 40vw;
+    height: 20vh;
+    bottom: 0;
+    opacity: .4;
+
+}
+
+#subtitle {
+    display: block;
+    width: 20rem;
+    height: 1.5rem;
+    background-color: #7f76a9;
+    color: white;
+    margin-top: -.8rem;
+    margin-left: 2.5rem;
+    font-variant: small-caps;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: .25rem;
+    font-size: large;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 5%;
+    margin-bottom: -1rem;
+    color: #303c6c;
+}
+
+#topLeft {
+
+    shape-outside: circle();
+    width: 100%;
+    height: auto;
+    margin-bottom: auto;
+}
+
+#blackCar {
+    shape-outside: url("../src/black-car.png");
+    float: right;
+}
+
+#topRight {
+    width: 100%;
+    height: auto;
+}
+
+#topRight p {
+    padding: .5vw;
+    text-align: center;
+}
+
+#whiteCar {
+    shape-outside: url(../src/white-car.png);
+    float: right;
+    margin-top: 7vh;
+}
+
+#bottomLeft p {
+    margin: 1em;
+}
+
+#bottomLeft h3 {
+    color: #998f76;
+    text-align: left;
+    margin: 0%;
+    text-indent: 2%;
+    font-weight: 300;
+    /* margin-bottom: -2.75rem; */
+    font-variant: small-caps;
+    font-size: 90%;
+    margin-left: -.5rem;
+}
+
+#innerBox {
+    background-color: #998f76;
+}
+
+#innerBox p {
+    color: #313758;
+}
+
+#innerBox h3 {
+    color: white;
+    margin-right: 1vw;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: end;
+    font-weight: 300;
+}
+
+#bottomRight p {
+    position: relative;
+}
+
+#logo img {
+    margin: 0vh .5vw .5vh 4vw;
+    padding-right: 30px;
+}
+
+#containerLeft {
+    margin-left: 2vw;
+}
+
+#containerRight {
+    margin-right: 3vw;
+}

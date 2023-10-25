@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>235 Midterm</title>
+
+    <style>
+        div {
+            box-sizing: border-box;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #container {
+            display: grid;
+            height: 96vh;
+        margin: 2vh auto;
+            grid-template-rows: 1fr 10fr 1fr;
+            grid-template-columns: 20% 1fr 20%;
+            grid-template-areas: "header header header"
+                "left_sidebar main right_sidebar"
+                "left_sidebar footer right_sidebar";
+        }
+    </style>
+</head>
+
+<body>
+    <headline>The One Piece is Real</headline>
+    <!-- <a href="../error/error.html">Placeholder 1</a> -->
+    <p>Web Technology for Game Developers</p>
+
+    <ol class="center">
+        <li><a href="http://www.apple.com">Apple</a></li>
+        <li><a href="http://www.microsoft.com">Microsoft</a></li>
+        <li><a href="http://www.amazon.com">Amazon</a></li>
+    </ol>
+    <div id="container">
+        <div id="header">
+            Header
+        </div>
+        <div id="left_sidebar">
+            Left Sidebar
+        </div>
+        <div id="main">Main</div>
+        <div id="right_sidebar">Right Sidebar</div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Pokemon</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+	<script src="styles/scripts.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<img src="images/pokemon-logo.png" alt="">
+	</header>
+	<main>
+		<p>Search Starting Pokemon or Random Number-&gt; <input id="searchterm" type="text" autofocus value="1"></p>
+		<p>How many pokemon do you want to search for-&gt; <input id="searchMax" type="number" autofocus value="6"></p>
+		<p><button type="button" id="search" class="green">Search!</button>
+			<button type="button" id="randomize" class="green">Random!</button>
+		</p>
+
+		<!-- box that contains all the filter buttons -->
+		<fieldset>
+			<legend>You can filter by type:</legend>
+			<div>
+				<p><label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="normal" checked="checked">
+						<img src="images/types/normal.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="fighting">
+						<img src="images/types/fighting.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="flying">
+						<img src="images/types/flying.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="poison">
+						<img src="images/types/poison.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="ground">
+						<img src="images/types/ground.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="rock">
+						<img src="images/types/rock.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="bug">
+						<img src="images/types/bug.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="ghost">
+						<img src="images/types/ghost.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="steel">
+						<img src="images/types/steel.gif" alt=""></label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="fire">
+						<img src="images/types/fire.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="water">
+						<img src="images/types/water.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="grass">
+						<img src="images/types/grass.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="electric">
+						<img src="images/types/electric.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="psychic">
+						<img src="images/types/psychic.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="ice">
+						<img src="images/types/ice.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="dragon">
+						<img src="images/types/dragon.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="dark">
+						<img src="images/types/dark.gif" alt=""></label>
+
+					<label>
+						<input type="radio" class="typeChoice" name="typeGroup" value="fairy">
+						<img src="images/types/fairy.gif" alt=""></label>
+				</p>
+			</div>
+			<div>
+				<!-- starting index for filter -->
+				<p>Choose a number to start at-&gt; <input id="filterStart" type="number" autofocus value="1"></p>
+				<button type="button" id="filter" class="green">Filter!</button>
+			</div>
+		</fieldset>
+		<p id="debug"></p>
+		<hr>
+		<div id="content">
+
+		</div>
+	</main>
+</body>
+
+</html>
